@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🏠 Real Estate Tokenization DApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🏠 Real Estate Tokenization DApp</h1>
+
+  <button id="connectButton">Connect Wallet</button>
+
+  <div id="walletInfo">
+    <p><b>Account:</b> <span id="account">Not connected</span></p>
+    <p><b>Network:</b> <span id="network">-</span></p>
+    <p><b>Balance:</b> <span id="balance">-</span></p>
+  </div>
+
+  <h2>Mint New Property</h2>
+  <input type="text" id="propertyName" placeholder="Property Name">
+  <input type="text" id="location" placeholder="Location">
+  <input type="number" id="price" placeholder="Price in ETH">
+  <button id="mintButton">Mint Property</button>
+
+  <h2>Delete Property</h2>
+  <input type="number" id="deleteId" placeholder="Property ID">
+  <button id="deleteButton">Delete Property</button>
+
+
+  <h2>Available Properties</h2>
+  <div id="propertyList"></div>
+
+  <!-- ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <!-- ABI -->
+  <script src="abi.js"></script>
+  <!-- App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
